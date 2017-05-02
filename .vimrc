@@ -63,11 +63,14 @@ nmap <Leader>ev :tabedit $MYVIMRC<cr>
 " Add simple highlight removal
 nmap <Leader><space> :nohlsearch<cr>
 
+" Quick save on /s
+noremap <Leader>s :update<CR>
+
 " Add jj as Esc alternative
 imap jj <ESC>
 
 " Invoke make directly on F7
-nnoremap <silent> <f7> :make %<<cr>
+nnoremap <silent> <f7> :make<cr>
 
 " Run on F5
 nnoremap <silent> <f5> :!./%<<cr>
